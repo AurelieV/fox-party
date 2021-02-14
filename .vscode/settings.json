@@ -1,0 +1,7 @@
+{
+    "vetur.validation.template": false,
+    "eslint.validate": ["javascript", "javascriptreact", "vue"],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.eol": "\n"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "fox-party",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Purple Fox",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1"
+  }
+}
