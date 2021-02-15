@@ -1,27 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="flex flex-col min-h-screen" :class="theme">
+    <TheHeader></TheHeader>
+    <main class="flex-1 px-2 py-4 bg-purple-100 dark:bg-purple-700">
+      <p class="text-center dark:text-color-white">Bienvenue dans la Fox Party</p>
+    </main>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent, provide, ref, readonly } from 'vue'
+import TheHeader from '/src/components/TheHeader.vue'
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld,
+  components: { TheHeader },
+  setup() {
+    const theme = ref('light')
+
+    const toggleTheme = () => {
+      theme.value = theme.value === 'dark' ? 'light' : 'dark'
+    }
+
+    provide('theme', readonly(theme))
+    provide('toggleTheme', toggleTheme)
+
+    return { theme }
   },
 })
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

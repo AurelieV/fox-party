@@ -1,22 +1,42 @@
 Website:
+  ✔ Alias @done(21-02-15 21:11)
+  ✔ Tailwind @done(21-02-15 21:24)
   ☐ Handle svg
-  ☐ Tailwind
+  ☐ Test unitaire (Jest ? Testing library?)
+  ☐ Cypress ?
+  ☐ Trad
+  ☐ Animate sur le hover et le click du button
+  ☐ Factoriser les boutons
+  ☐ Connexion
+  ☐ Local storage le theme
+  ☐ Global style
 
 Back:
+ ✔ Alias @done(21-02-15 21:11)
  ☐ API
  ☐ Bot
  ☐ Https
  ☐ Twitch Authent
  ☐ BDD (Mongo?)
+ ☐ Test unitaire
 
 Twitch Overlay:
 ☐ Create
+☐ Intégration Twitch Rig
+
+Design:
+☐ Figma
+☐ Storybook? Autre?
+☐ Logo
 
 Global:
  ☐ Launcher
  ☐ Debugger
+ ☐ Mise en prod
+ ☐ Configurer eslint correctement
 
 Other:
-☐ Gitmoji
+✔ Gitmoji @done(21-02-14 22:44)
 ☐ Readme
+☐ Compte twitch du bot + validation
 
