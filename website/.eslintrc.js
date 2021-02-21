@@ -15,11 +15,15 @@ module.exports = {
     'prettier/vue',
     'prettier/@typescript-eslint',
   ],
+
   overrides: [
     {
-      files: ['.eslintrc.js', 'tailwind.config.js'],
+      files: ['.eslintrc.js', 'tailwind.config.js', 'postcss.config.js'],
       env: {
         node: true,
+      },
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],

@@ -1,0 +1,25 @@
+:root {
+  --fp-color-primary-dark: theme('colors.indigo.800');
+  --fp-color-primary: theme('colors.indigo.500');
+  --fp-color-primary-light: theme('colors.indigo.200');
+  --fp-color-secondary-dark: theme('colors.amber.300');
+  --fp-color-secondary: theme('colors.amber.200');
+  --fp-color-secondary-light: theme('colors.amber.100');
+  --fp-color-background: theme('colors.indigo.100');
+  --fp-color-text: theme('colors.black');
+  --fp-color-text_on-primary: theme('colors.black');
+  --fp-color-text_on-secondary: theme('colors.black');
+}
+
+.dark {
+  --fp-color-primary-dark: theme('colors.indigo.800');
+  --fp-color-primary: theme('colors.indigo.500');
+  --fp-color-primary-light: theme('colors.indigo.200');
+  --fp-color-secondary-dark: theme('colors.amber.300');
+  --fp-color-secondary: theme('colors.amber.200');
+  --fp-color-secondary-light: theme('colors.amber.100');
+  --fp-color-background: theme('colors.neutral.600');
+  --fp-color-text: theme('colors.white');
+  --fp-color-text_on-primary: theme('colors.white');
+  --fp-color-text_on-secondary: theme('colors.black');
+}
