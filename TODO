@@ -1,12 +1,13 @@
 Website:
-  ☐ Custom theme via css property
-  ☐ Global style
-  ☐ Use globalProperties for theme?
-  ☐ Local storage le theme
+  ✔ Custom theme via css property @done(21-02-21 23:58)
+  ✔ Global style @done(21-02-21 23:58)
+  ✔ Use globalProperties for theme? @done(21-02-21 23:58)
+  ✔ Local storage le theme @started(21-02-22 00:01) @done(21-02-22 00:33) @lasted(32m12s)
+  ☐ Handle svg
+  ☐ Joli switch pour le theme
+  ☐ Trad
   ☐ Animate sur le hover et le click du button
   ☐ Factoriser les boutons
-  ☐ Trad
-  ☐ Handle svg
   ☐ Test unitaire (Jest ? Testing library?)
   ☐ Cypress ?
   ☐ Connexion
@@ -18,6 +19,9 @@ Back:
  ☐ Twitch Authent
  ☐ BDD (Mongo?)
  ☐ Test unitaire
+
+Streamlabs:
+  ☐ ALERTE SCENE
 
 Twitch Overlay:
 ☐ Create

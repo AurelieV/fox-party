@@ -1,20 +1,9 @@
-import { createApp, ref } from 'vue'
+import { createApp } from 'vue'
 
-import { Theme } from 'src/types/theme'
+import { Theme } from './types/theme'
+import ThemePlugin from './plugins/theme'
 
 import App from './App.vue'
 import '/src/style/index.css'
 
-const app = createApp(App)
-app.mount('#app')
-
-const theme = ref<Theme>(Theme.default)
-
-app.config.globalProperties.$fpTheme = {
-  get() {
-    return theme.value
-  },
-  set(value: Theme) {
-    theme.value = value
-  },
-}
+createApp(App).use(ThemePlugin, { initial: Theme.default, localStorage: true }).mount('#app')
