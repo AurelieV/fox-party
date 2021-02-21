@@ -1,10 +1,20 @@
-import { createApp } from 'vue'
+import { createApp, ref } from 'vue'
+
+import { Theme } from '/src/types/theme.ts'
+
 import App from './App.vue'
 import '/src/style/index.css'
 
 const app = createApp(App)
 app.mount('#app')
 
-import 'windi.css'
+const theme = ref<Theme>(Theme.default)
 
-createApp(App).mount('#app')
+app.config.globalProperties.$fpTheme = {
+  get() {
+    return theme.value
+  },
+  set(value: Theme) {
+    theme.value = value
+  },
+}

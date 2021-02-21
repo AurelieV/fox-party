@@ -26,5 +26,15 @@ export default defineComponent({
 
     return { theme }
   },
+  watch: {
+    theme(newTheme, oldTheme) {
+      if (oldTheme) {
+        document.body.classList.remove(oldTheme)
+      }
+      if (newTheme) {
+        document.body.classList.add(newTheme)
+      }
+    },
+  },
 })
 </script>

@@ -11,17 +11,19 @@
 </template>
 
 <script>
-import { defineComponent, inject } from 'vue'
-export default defineComponent({
-  setup() {
-    const theme = inject('theme')
-    const toggleTheme = inject('toggleTheme')
+import { defineComponent } from 'vue'
 
-    return { theme, toggleTheme }
-  },
+import { Theme } from '/src/types/theme.ts'
+
+export default defineComponent({
   computed: {
     switchLabel() {
-      return this.theme === 'dark' ? 'Switch to light' : 'Switch to dark'
+      return this.$fpTheme === Theme.dark ? 'Switch to light' : 'Switch to dark'
+    },
+  },
+  methods: {
+    toggleDarkTheme() {
+      this.$fpTheme = this.$fpTheme === Theme.dark ? Theme.default : Theme.dark
     },
   },
 })
