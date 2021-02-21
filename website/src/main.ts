@@ -1,6 +1,6 @@
 import { createApp, ref } from 'vue'
 
-import { Theme } from '/src/types/theme.ts'
+import { Theme } from 'src/types/theme'
 
 import App from './App.vue'
 import '/src/style/index.css'
