@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "name": "Website",
+      "request": "launch",
+      "type": "pwa-chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/website/src",
+      "skipFiles": ["${workspaceFolder}/website/node_modules/**"],
+      "preLaunchTask": "Start Website"
+    },
+    {
+      "name": "API",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/api",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "dev"],
+      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/api/node_modules/**"],
+      "type": "pwa-node"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Start all",
+      "configurations": ["API", "Website"]
+    }
+  ]
+}

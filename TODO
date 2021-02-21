@@ -1,18 +1,17 @@
 Website:
-  ✔ Alias @done(21-02-15 21:11)
-  ✔ Tailwind @done(21-02-15 21:24)
+  ☐ Custom theme via css property
+  ☐ Global style
+  ☐ Use globalProperties for theme?
+  ☐ Local storage le theme
+  ☐ Animate sur le hover et le click du button
+  ☐ Factoriser les boutons
+  ☐ Trad
   ☐ Handle svg
   ☐ Test unitaire (Jest ? Testing library?)
   ☐ Cypress ?
-  ☐ Trad
-  ☐ Animate sur le hover et le click du button
-  ☐ Factoriser les boutons
   ☐ Connexion
-  ☐ Local storage le theme
-  ☐ Global style
 
 Back:
- ✔ Alias @done(21-02-15 21:11)
  ☐ API
  ☐ Bot
  ☐ Https
@@ -25,7 +24,7 @@ Twitch Overlay:
 ☐ Intégration Twitch Rig
 
 Design:
-☐ Figma
+☐ Figma ?
 ☐ Storybook? Autre?
 ☐ Logo
 
@@ -33,10 +32,8 @@ Global:
  ☐ Launcher
  ☐ Debugger
  ☐ Mise en prod
- ☐ Configurer eslint correctement
 
 Other:
-✔ Gitmoji @done(21-02-14 22:44)
 ☐ Readme
 ☐ Compte twitch du bot + validation
 
