@@ -13,8 +13,8 @@
 <script>
 import { defineComponent } from 'vue'
 
-import { Theme } from '/src/types/theme.ts'
-import { useTheme } from '/src/plugins/theme.ts'
+import { Theme } from '@/types/theme.ts'
+import { useTheme } from '@/plugins/theme.ts'
 
 export default defineComponent({
   setup() {
