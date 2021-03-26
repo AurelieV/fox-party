@@ -1,0 +1,22 @@
+{
+  "name": "fox-party-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "node -r esbuild-register src/index.ts"
+  },
+  "author": "Purple Fox",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.28",
+    "esbuild-register": "^2.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "esbuild": "^0.8.46",
+    "tmi.js": "^1.7.5"
+  }
+}
